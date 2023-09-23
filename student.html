@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+        margin: 0px;
+        padding: 0px;
+        background-color: grey;
+        }
+        #navbar{
+           height: 100px;
+           background-color: black; 
+           color: aliceblue;
+           font-size: x-large;
+           gap: 20px;
+          }
+        #searchbar{
+            display: flex;
+            padding: 20px ;
+            justify-content: center;
+          
+        }
+       #btn{
+            width: 200px;
+            height: 50px;
+            color: white;
+            background-color: black;
+            font-size: large;
+        }
+        #btns{
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+        table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+      td,
+      th {
+        padding: 10px;
+        text-align: center;
+        vertical-align: center;
+      }
+
+    </style>
+</head>
+<body>
+    <div id = navbar>Student Portal</div>
+    <div id="searchbar">
+    <input type="text" name="searchbar" placeholder="SEARCH">
+    <button id="btn">SEARCH</button>
+</div>
+<div id="btns">
+    <button id="btn">Sort A->Z</button>
+    <button id="btn">Sort Z->A</button>
+    <button id="btn">Sort By Marks</button>
+    <button id="btn">Sort By Passing</button>
+    <button id="btn">Sort By Marks</button>
+    <button id="btn">Sort By Gender</button>
+
+</div>
+<table id="table-body">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th> Name</th>
+        <th>Gender</th>
+        <th>Class</th>
+        <th>Marks</th>
+        <th>Passing</th>
+        <th>Sort By Gender</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+
+
+
+
+    <script src="student.js"></script>
+</body>
+</html>
